@@ -1,9 +1,9 @@
 .contents {
     overflow: hidden;
     /*ボックスから出た部分は隠す*/
-    width: 750px;
-    height: 300px;
-    margin: 0 auto;
+    width: auto;
+    height: 500px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
@@ -43,7 +43,7 @@
     display: block;
     width: 150px;
     height: 40px;
-    color: #3e3ed3;
+    color: #2147c3;
     text-shadow: 0.75px 0.75px 0 #fff,
         -0.75px 0.75px 0 #fff,
         0.75px -0.75px 0 #fff,
@@ -52,17 +52,22 @@
     line-height: 2.8;
     padding: 0 5px;
     background: #b2cef0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
     box-sizing: border-box;
     text-decoration: none;
     transition: 0.5s;
+}
+
+.nav ul li a{
+    width: 200px;
 }
 
 .nav > li:hover > a {
     /*layer-1*/
     color: #ffffff;
     text-shadow: none;
-    background: #236dc7;
+    background: #6296d6;
     transition: 0.5s;
 }
 
@@ -70,7 +75,7 @@
     /*layer-2*/
     color: #fff;
     text-shadow: none;
-    background: #2a3fb4;
+    background: #18549d;
 }
 
 .nav li:hover > ul > li {
@@ -78,6 +83,10 @@
     top: -40px;
     left: 110px;
     height: 40px;
+}
+
+.nav li ul li:hover > ul > li{
+    left: 160px;
 }
 
 .nav li ul li {
@@ -89,9 +98,15 @@
     transition: 0.3s;
 }
 
-.nav li ul li a {
-    background: #236dc7;
+.nav ul li a {
+    background: #6296d6;
+    color: #2147c3;
     transition: 0.5s;
+}
+
+.nav ul li ul a{
+    background-color: #18549d;
+    color:#00124d;
 }
 
 .nav li ul:before {
@@ -105,15 +120,20 @@
     border-left: 5px solid #fff;
 }
 
+.nav li ul li ul:before{
+    left: 190px;
+}
+
 .nav li:hover ul li ul li:hover > a {
     /*layer-3*/
-    color: pink;
-    background: #b2cef0;
+    color: #fff;
+    text-shadow: none;
+    background: #0d006d;
 }
 
 .content {
-    width: 600px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     background: #eee;
     margin: 0;
     padding: 10px;
@@ -122,11 +142,11 @@
 }
 
 #header ul.horizontal{
-    width: 750px;
+    width: auto;
     height: 40px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    display: flex;
+    display: inline-flex;
 }
 
 #header ul.horizontal li{
@@ -136,10 +156,14 @@
 
 #header ul.horizontal li a {
     display: block;
-    width: 150px;
+    width: 300px;
     height: 40px;
     text-align: center;
-    color: #fff;
+    color: #764300;
+    text-shadow: 0.75px 0.75px 0 #fff,
+        -0.75px 0.75px 0 #fff,
+        0.75px -0.75px 0 #fff,
+        -0.75px -0.75px 0 #fff;
     font-size: 14px;
     line-height: 2.8;
     background: #ffc993;
@@ -148,14 +172,30 @@
     box-sizing: border-box;
 }
 
+#header ul.horizontal li:hover > a{
+    text-shadow: none;
+    color: #fff;
+    background-color: #cb7919;
+}
+
 h1.largeLetter{
     margin: 0px;
     padding: 0px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.color-orange{
+    background-color: antiquewhite;
+}
+
+.color-green{
+    background-color: #bffabb;
 }
 
 #header img{
     width: 100%;
-    height: 100px;
+    height: 250px;
 }
 
 #header{
