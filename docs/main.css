@@ -2,7 +2,7 @@
     overflow: hidden;
     /*ボックスから出た部分は隠す*/
     width: auto;
-    height: 500px;
+    height: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -200,4 +200,15 @@ h1.largeLetter{
 
 #header{
     text-align: center;
+}
+p{
+    line-height: 2em;
+    font-size: 15px;
+}
+p::first-letter {
+    font-size: 2em;
+}
+
+br{
+   line-height: 3em; 
 }
