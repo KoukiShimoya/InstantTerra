@@ -2,7 +2,7 @@
     overflow: hidden;
     /*ボックスから出た部分は隠す*/
     width: auto;
-    height: auto;
+    height: 1000px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
